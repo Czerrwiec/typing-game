@@ -1,0 +1,133 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 25px;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    height: 100vh;
+    color: whitesmoke;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.58);
+    height: 60%;
+    width: 800px;
+    max-width: 95%;
+    border-radius: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    letter-spacing: 0.5px;
+}
+
+.typing-area {
+    margin: 0px 40px;
+    margin-bottom: 40px;
+    height: 45%;
+    padding: 10px 18px;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    font-size: 22px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.author {
+    position: absolute;
+    top: 40%;
+    right: 7%;
+    font-size: 16px;
+}
+
+.quote {
+    margin: 20px;
+    padding: 40px 60px;
+    line-height: 35px;
+}
+
+.time {
+    position: absolute;
+    right: 0;
+    padding: 13px 17px;
+    font-size: 22px;
+}
+
+.correct {
+    color: greenyellow;
+}
+
+.incorrect {
+    color: rgb(248, 81, 39);
+}
+
+.popup {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    z-index: 20;
+}
+
+.popup-btn {
+    width: 25%;
+    padding: 8px 25px;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 14px;
+}
+
+.popup-btn:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.popupTextDiv {
+    text-align: center;
+}
+
+.popupText {
+    margin: 10px;
+}
+
+.shadow {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.28);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.fa-medal {
+    /* display: none; */
+    color: #824A02;
+    margin-top: 16px;
+    font-size: 30px;
+}
