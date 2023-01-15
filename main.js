@@ -9,7 +9,6 @@ const medal = document.querySelector('.fa-medal')
 
 let time;
 let timeInterval;
-
 const url = 'https://api.quotable.io/random';
 
 function getQuote() {
@@ -100,5 +99,4 @@ const closePopup = (e) => {
 };
 
 displayQuote();
-
 typingArea.addEventListener('input', compare);
