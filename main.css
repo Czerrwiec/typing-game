@@ -6,10 +6,10 @@
 	box-sizing: border-box;
 }
 
-
 body {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Kumbh Sans', sans-serif;
@@ -19,6 +19,19 @@ body {
     color: whitesmoke;
 }
 
+.welcome-text {
+    top: 80px;
+    position: absolute;
+    font-size: 35px;
+    font-weight: 300;
+    padding-bottom: 100px;
+    letter-spacing: 1px;
+    transition: opacity 0.8s;
+}
+
+.inactive {
+    opacity: 0;
+}
 
 .container {
     position: relative;
@@ -126,7 +139,6 @@ body {
 }
 
 .fa-medal {
-    /* display: none; */
     color: #824A02;
     margin-top: 16px;
     font-size: 30px;

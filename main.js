@@ -6,6 +6,7 @@ const popup = document.querySelector('.popup');
 const popupBtn = document.querySelector('.popup-btn');
 const shadow = document.querySelector('.shadow');
 const medal = document.querySelector('.fa-medal')
+const welcomeText = document.querySelector('.welcome-text');
 
 let time;
 let timeInterval;
@@ -23,7 +24,10 @@ function displayQuote() {
 	typingArea.addEventListener('keydown', timer);
 }
 
+
 function compare() {
+	welcomeText.classList.add('inactive')
+
 	typingArea.removeEventListener('keydown', timer);
 	const quote = quoteParagraph.textContent.split('');
 	const typedLetters = typingArea.value.split('');
