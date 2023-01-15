@@ -44,10 +44,14 @@ function compare() {
 		} else if (character !== typedLetters[index]) {
 			letterSpan.classList.remove('correct');
 			letterSpan.classList.add('incorrect');
+			if (character == ' ') {
+				letterSpan.style.backgroundColor = 'red'
+				letterSpan.style.lineHeight = '3px';
+			} 
 		}
 	});
 
-	if (quote.toString() == typedLetters.toString()) {
+	if (quote.join() == typedLetters.join()) {
 		typingArea.value = '';
 		showPopup();
 		displayQuote();
@@ -77,7 +81,7 @@ function showPopup() {
 	
 	if (speed < 3) medal.style.color = '#824A02'
 	if (speed >= 3) medal.style.color = 'silver'
-	if (speed >= 6) medal.style.color = 'gold';
+	if (speed >= 4.9) medal.style.color = 'gold';
 
 	clearInterval(timeInterval);
 
